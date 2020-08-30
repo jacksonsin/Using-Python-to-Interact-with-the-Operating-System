@@ -11,21 +11,34 @@ Exercise - Getting Your Computer Ready for Python
 What is the name of the command line tool commonly used to install, update, and remove external Python modules mentioned in the video?
 
 Ans: pip
-"""
-Exercise - 
-"""
 
 """
-Exercise - 
+Exercise - Interpreted vs. Compiled Languages
 """
+Which of the following programming languages are interpreted languages?
+
+Ans: Python and Javascript
 
 """
-Exercise - 
+Exercise - How to Run a Python Script
 """
+What is the purpose of using a shebang line in a Python file?
+
+Ans: To specify beforehand what command to use when running the script
 
 """
-Exercise - 
+Exercise - Your Own Python Modules
 """
+Proper code reuse is important, so let’s see if you were paying attention. Which of the following lines will allow you to use the datetime module in your script?
+
+Ans: import datatime
+
+"""
+Exercise - What is an IDE?
+"""
+Which of the following is NOT an example of code completion?
+
+Ans: After typing "def", your IDE detects that you are typing a function and highlights it.
 
 """
 Exercise - 
