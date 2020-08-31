@@ -60,3 +60,10 @@ Exercise - Practical Automation Example
 Which of the following could be a good example of when to use an automation script?
 
 Ans: Detect dangerously high CPU usage levels across a network and scale back the CPU clock speeds of those devices, or shut them down to prevent overheating
+
+"""
+Exercise - What is Qwiklabs?
+"""
+What is a virtual machine?
+
+Ans: Simulated hardware
