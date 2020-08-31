@@ -41,9 +41,22 @@ Which of the following is NOT an example of code completion?
 Ans: After typing "def", your IDE detects that you are typing a function and highlights it.
 
 """
-Exercise - 
+Exercise - Benefits of Automation
 """
+In terms of automation, which of the following is an example of scalability?
+
+Ans: An IT engineer writes a script to compile a report on each machine's uptime and downtime for the day and email it to relevant parties every evening. 
 
 """
-Exercise - 
+Exercise - Pitfalls of Automation
 """
+Which of the following correctly describes the Pareto Principle?
+
+Ans: One fifth of the sysadmin tasks you perform comprise four fifths of your total workload.
+
+"""
+Exercise - Practical Automation Example
+"""
+Which of the following could be a good example of when to use an automation script?
+
+Ans: Detect dangerously high CPU usage levels across a network and scale back the CPU clock speeds of those devices, or shut them down to prevent overheating
