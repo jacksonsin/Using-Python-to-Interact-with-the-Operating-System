@@ -1,0 +1,101 @@
+# Fix file permissions
+1. To navigate the scripts directory
+cd scripts
+
+2. List the file
+ls
+
+3. To view the contents of this file
+cat health_checks.py
+
+4. To modify the permissions to executable
+sudo chmod +x health_checks.py
+
+5. Run the file
+./health_checks.py
+
+# Debug the issue
+1.Use nano editor to open the file
+nano health_checks.py
+
+2. Run the file
+./health_checks.py
+
+###################################################################
+#!/usr/bin/env python3
+import shutil
+import psutil
+
+def check_disk_usage(disk):
+    du = shutil.disk_usage(disk)
+    free = du.free / du.total * 100
+    return  free > 20
+
+def check_cpu_usage():
+    usage = psutil.cpu_percent(interval=1)
+    return usage < 75
+
+if not check_disk_usage("/") or not check_cpu_usage():
+    print("ERROR!")
+else:
+    print("Everything is OK!")
+    
+###################################################################
+# Create a new Python module
+
+1. Install the request modules
+sudo apt install python3-requests
+
+2. Navigate to the script directory
+cd ~/scripts
+
+3.Use nano editor to create a new file
+nano network.py
+
+###################################################################
+#!/usr/bin/env python3
+import requests
+import socket
+
+def check_localhost():
+  localhost = socket.gethostbyname('losthost')
+  if localhost == '127.0.0.1':
+    return True
+  return False
+  
+def check_connectivity():
+  request = requests.get('http://www.google.com')
+  response = request.status_code
+  if response == 200
+    return True
+  return False
+###################################################################
+#  Use the Python module
+
+1.Use nano editor to open the file
+nano health_checks.py
+
+###################################################################
+#!/usr/bin/env python3
+from network import *
+import shutil
+import psutil
+
+def check_disk_usage(disk):
+    du = shutil.disk_usage(disk)
+    free = du.free / du.total * 100
+    return  free > 20
+
+def check_cpu_usage():
+    usage = psutil.cpu_percent(interval=1)
+    return usage < 75
+
+if not check_disk_usage("/") or not check_cpu_usage():
+    print("ERROR!")
+elif check_localhost() and check_connectivity()
+    print("Everything ok")
+else:
+    print("Network checks failed")
+###################################################################
+1. Run the file
+./health_checks.py
