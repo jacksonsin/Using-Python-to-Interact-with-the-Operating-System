@@ -16,24 +16,29 @@ What happens to the previous contents of a file when we open it using "w" ("writ
 Ans: The old contents get deleted as soon as we open the file.
 
 """
-Exercise
+Exercise - Working with Files
 """
+How can we check if a file exists inside a Python script?
+
+Ans: Using the os.path.exists function.
 
 """
-Exercise
+Exercise - More File Information
 """
+Some more functions of the os.path module include getsize() and isfile() 
+which get information on the file size and determine if a file exists, respectively. 
+In the following code snippet, what do you think will print if the file does not exist?
+
+Ans: 
+False
+File not Found
 
 """
-Exercise
+Exercise - Directories
 """
+What's the purpose of the os.path.join function?
 
-"""
-Exercise
-"""
-
-"""
-Exercise
-"""
+Ans: It creates a string containing cross-platform concatenated directories.
 
 """
 Exercise
