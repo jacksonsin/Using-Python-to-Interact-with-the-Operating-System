@@ -9,8 +9,11 @@ with open("hello_world.txt") as text:
 	    print(line.strip())
 
 """
-Exercise
+Exercise - Writing Files
 """
+What happens to the previous contents of a file when we open it using "w" ("write" mode)?
+
+Ans: The old contents get deleted as soon as we open the file.
 
 """
 Exercise
