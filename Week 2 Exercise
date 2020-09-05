@@ -41,9 +41,36 @@ What's the purpose of the os.path.join function?
 Ans: It creates a string containing cross-platform concatenated directories.
 
 """
-Exercise
+Exercise - What is a CSV file?
 """
+If we have data in a format we understand, then we have what we need to parse the information from the file. What does parsing really mean?
+
+Ans: Using rules to understand a file or datastream as structured data.
 
 """
-Exercise
+Exercise - Reading CSV Files
 """
+Which of the following lines would correctly interpret a CSV file called "file" using the CSV module? Assume that the CSV module has already been imported.
+
+Ans: data=csv.reader(file)
+
+"""
+Exercise - Generating CSV
+"""
+Which of the following must we do before using the csv.writer() function?
+
+Ans: Open the file with write permissions.
+
+"""
+Exercise - Reading and Writing CSV Files with Dictionaries
+"""
+DictReader() allows us to convert the data in a CSV file into a standard dictionary. 
+DictWriter() \ allows us to write data from a dictionary into a CSV file. 
+What’s one parameter we must pass in order for DictWriter() to write our dictionary to CSV format?
+
+Ans: The fieldnames parameter of DictWriter() requires a list of keys
+
+"""
+Exercise - 
+"""
+Ans:
