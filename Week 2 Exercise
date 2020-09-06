@@ -71,6 +71,8 @@ What’s one parameter we must pass in order for DictWriter() to write our dicti
 Ans: The fieldnames parameter of DictWriter() requires a list of keys
 
 """
-Exercise - 
+Exercise - Reading and Writing CSV Files with Dictionaries
 """
-Ans:
+DictReader() allows us to convert the data in a CSV file into a standard dictionary. DictWriter() \ allows us to write data from a dictionary into a CSV file. What’s one parameter we must pass in order for DictWriter() to write our dictionary to CSV format?
+
+Ans: The fieldnames parameter of DictWriter() requires a list of keys
