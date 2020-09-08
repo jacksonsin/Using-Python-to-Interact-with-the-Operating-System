@@ -1,0 +1,89 @@
+# Prerequisites
+1. Navigate to the data directory
+cd data
+
+2. To find the data, list the files
+ls
+
+3. To view the contents of the file
+cat employees.csv
+
+4.  Go to the scripts directory
+cd ~/scripts
+
+5. Create a file named generate_report.py 
+nano generate_report.py
+
+6. Write a shebang, and continues with the path to the interpreter
+######
+#!/usr/bin/env python3
+import csv
+
+def read_employees(csv_file_location):
+  csv.register_dialect('empDialect', skipinitialspace=True, strict=True)
+  employee_file = csv.DictReader(open(csv_file_location), dialect = 'empDialect')
+  employee_list = []
+  for data in employee_file:
+    employee_list.append(data)
+  return employee_list
+employee_list = read_employees('/home/student-04-f2e909eac81b/data/employees.csv')
+print(employee_list)
+######
+1. Save the file, CTRL O, ENTER, CTRL X
+
+2. update the file permissions and then try running the file
+chmod +x generate_report.py
+
+3. Test the function
+./generate_report.py
+
+# Process employee data
+1. Open the file generate_report.py
+nano generate_report.py
+
+######
+def process_data(employee_list):
+  department_list = []
+  for employee_data in employee_list:
+    department_list.append(employee_data['Department'])
+  department_data = {}
+  for department_name in set(department_list):
+    department_data[department_name] = department_list.count(department_name)
+  return department_data
+
+dictionary = process_data(employee_list)
+print(dictionary)
+###### 
+2. Save the file, CTRL O, ENTER, CTRL X
+
+3. Test the function by running the file 
+./generate_report.py
+
+# Generate a report
+1. Open generate_report.py 
+nano generate_report.py
+
+######
+def write_report(dictionary, report_file):
+  with open(report_file, "w+") as f:
+    for k in sorted(dictionary):
+      f.write(str(k)+':'+str(dictionary[k])+'\n')
+    f.close()
+write_report(dictionary, '/home/student-04-f2e909eac81b/data/report.txt')
+######
+2. Save the file, CTRL O, ENTER, CTRL X
+
+3. Test the function by running the file 
+./generate_report.py
+
+This script does not generate any output, but it creates a new file named report.txt within the data directory. 
+This report.txt file should now have the count of people in each department.
+
+4.  Navigate to the data directory
+cd ~/data
+
+5. List the files
+ls
+
+6. To view the generated report file
+cat report.txt
