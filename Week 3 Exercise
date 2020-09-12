@@ -1,0 +1,45 @@
+"""
+What are regular expressions?
+"""
+Qns: Which of the following demonstrates how regex (regular expressions) might be used?
+
+Ans: Find strings of text that match a pattern
+
+"""
+Why use regular expressions?
+"""
+Qns: Rather than using the index() function of the string module, we can use regular expressions, which are more flexible. After importing the regular expression module re, what regex function might be used instead of standard methods?
+
+Ans: 
+re.search()
+
+"""
+Basic Matching with grep
+"""
+Qns: Using the terminal, which of the following commands will correctly use grep to find the words “sling” and “sting” (assuming they are in our file, file.txt)?
+
+Ans: user@ubuntu:~$ grep s.ing /usr/file.txt
+
+"""
+W
+"""
+Qns: 
+Ans: 
+
+"""
+W
+"""
+Qns: 
+Ans: 
+
+"""
+W
+"""
+Qns: 
+Ans: 
+
+"""
+W
+"""
+Qns: 
+Ans: 
