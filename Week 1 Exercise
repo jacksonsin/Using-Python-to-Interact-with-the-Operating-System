@@ -1,69 +1,69 @@
 """
 Exercise - Getting Familiar with the Operating System
 """
-Which of the following is NOT an open-source OS?
+Qns: Which of the following is NOT an open-source OS?
 
 Ans: Microsoft Windows
 
 """
 Exercise - Getting Your Computer Ready for Python
 """
-What is the name of the command line tool commonly used to install, update, and remove external Python modules mentioned in the video?
+Qns: What is the name of the command line tool commonly used to install, update, and remove external Python modules mentioned in the video?
 
 Ans: pip
 
 """
 Exercise - Interpreted vs. Compiled Languages
 """
-Which of the following programming languages are interpreted languages?
+Qns: Which of the following programming languages are interpreted languages?
 
 Ans: Python and Javascript
 
 """
 Exercise - How to Run a Python Script
 """
-What is the purpose of using a shebang line in a Python file?
+Qns: What is the purpose of using a shebang line in a Python file?
 
 Ans: To specify beforehand what command to use when running the script
 
 """
 Exercise - Your Own Python Modules
 """
-Proper code reuse is important, so let’s see if you were paying attention. Which of the following lines will allow you to use the datetime module in your script?
+Qns: Proper code reuse is important, so let’s see if you were paying attention. Which of the following lines will allow you to use the datetime module in your script?
 
 Ans: import datatime
 
 """
 Exercise - What is an IDE?
 """
-Which of the following is NOT an example of code completion?
+Qns: Which of the following is NOT an example of code completion?
 
 Ans: After typing "def", your IDE detects that you are typing a function and highlights it.
 
 """
 Exercise - Benefits of Automation
 """
-In terms of automation, which of the following is an example of scalability?
+Qns: In terms of automation, which of the following is an example of scalability?
 
 Ans: An IT engineer writes a script to compile a report on each machine's uptime and downtime for the day and email it to relevant parties every evening. 
 
 """
 Exercise - Pitfalls of Automation
 """
-Which of the following correctly describes the Pareto Principle?
+Qns: Which of the following correctly describes the Pareto Principle?
 
 Ans: One fifth of the sysadmin tasks you perform comprise four fifths of your total workload.
 
 """
 Exercise - Practical Automation Example
 """
-Which of the following could be a good example of when to use an automation script?
+Qns: Which of the following could be a good example of when to use an automation script?
 
 Ans: Detect dangerously high CPU usage levels across a network and scale back the CPU clock speeds of those devices, or shut them down to prevent overheating
 
 """
 Exercise - What is Qwiklabs?
 """
-What is a virtual machine?
+Qns: What is a virtual machine?
 
 Ans: Simulated hardware
