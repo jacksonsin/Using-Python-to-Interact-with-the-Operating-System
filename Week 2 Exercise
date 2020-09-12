@@ -1,7 +1,7 @@
 """
 Exercise - Iterating through Files
 """
-Can you identify which code snippet will correctly open a file and print lines one by one without whitespace?
+Qns: Can you identify which code snippet will correctly open a file and print lines one by one without whitespace?
 
 Ans:
 with open("hello_world.txt") as text:
@@ -11,21 +11,21 @@ with open("hello_world.txt") as text:
 """
 Exercise - Writing Files
 """
-What happens to the previous contents of a file when we open it using "w" ("write" mode)?
+Qns: What happens to the previous contents of a file when we open it using "w" ("write" mode)?
 
 Ans: The old contents get deleted as soon as we open the file.
 
 """
 Exercise - Working with Files
 """
-How can we check if a file exists inside a Python script?
+Qns: How can we check if a file exists inside a Python script?
 
 Ans: Using the os.path.exists function.
 
 """
 Exercise - More File Information
 """
-Some more functions of the os.path module include getsize() and isfile() 
+Qns: Some more functions of the os.path module include getsize() and isfile() 
 which get information on the file size and determine if a file exists, respectively. 
 In the following code snippet, what do you think will print if the file does not exist?
 
@@ -36,35 +36,35 @@ File not Found
 """
 Exercise - Directories
 """
-What's the purpose of the os.path.join function?
+Qns: What's the purpose of the os.path.join function?
 
 Ans: It creates a string containing cross-platform concatenated directories.
 
 """
 Exercise - What is a CSV file?
 """
-If we have data in a format we understand, then we have what we need to parse the information from the file. What does parsing really mean?
+Qns: If we have data in a format we understand, then we have what we need to parse the information from the file. What does parsing really mean?
 
 Ans: Using rules to understand a file or datastream as structured data.
 
 """
 Exercise - Reading CSV Files
 """
-Which of the following lines would correctly interpret a CSV file called "file" using the CSV module? Assume that the CSV module has already been imported.
+Qns: Which of the following lines would correctly interpret a CSV file called "file" using the CSV module? Assume that the CSV module has already been imported.
 
 Ans: data=csv.reader(file)
 
 """
 Exercise - Generating CSV
 """
-Which of the following must we do before using the csv.writer() function?
+Qns: Which of the following must we do before using the csv.writer() function?
 
 Ans: Open the file with write permissions.
 
 """
 Exercise - Reading and Writing CSV Files with Dictionaries
 """
-DictReader() allows us to convert the data in a CSV file into a standard dictionary. 
+Qns: DictReader() allows us to convert the data in a CSV file into a standard dictionary. 
 DictWriter() \ allows us to write data from a dictionary into a CSV file. 
 What’s one parameter we must pass in order for DictWriter() to write our dictionary to CSV format?
 
@@ -73,6 +73,6 @@ Ans: The fieldnames parameter of DictWriter() requires a list of keys
 """
 Exercise - Reading and Writing CSV Files with Dictionaries
 """
-DictReader() allows us to convert the data in a CSV file into a standard dictionary. DictWriter() \ allows us to write data from a dictionary into a CSV file. What’s one parameter we must pass in order for DictWriter() to write our dictionary to CSV format?
+Qns: DictReader() allows us to convert the data in a CSV file into a standard dictionary. DictWriter() \ allows us to write data from a dictionary into a CSV file. What’s one parameter we must pass in order for DictWriter() to write our dictionary to CSV format?
 
 Ans: The fieldnames parameter of DictWriter() requires a list of keys
