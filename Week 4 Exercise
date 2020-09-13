@@ -1,0 +1,41 @@
+###
+Reading Data interactively
+###
+Qns: Which line of code from the seconds.py script will convert all integer inputs into seconds?
+
+Ans: to_seconds(hours, minutes, seconds)
+
+###
+Standard Streams
+###
+Qns: Which I/O stream is the output function using when showing an error message?
+
+Ans: STDERR
+
+###
+Environment Variables
+###
+Qns: Which directory is NOT listed in the PATH variable by default?
+
+Ans: /usr/sbin/temp
+
+###
+
+###
+Qns:
+
+Ans:
+
+###
+
+###
+Qns:
+
+Ans:
+
+###
+
+###
+Qns:
+
+Ans:
