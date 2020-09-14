@@ -27,6 +27,34 @@ Qns: Where are the command line arguments stored?
 Ans: sys
 
 ###
+Running System Commands in Python
+###
+Qns: A system command that sends ICMP packets can be executed within a script by using which of the following?
+
+Ans: subprocess.run
+
+###
+Obtaining the Output of a System Command
+###
+Qns: Which of the following is a Unicode standard used to convert an array of bytes into a string?
+
+Ans: UTF-8
+
+###
+Advanced Subprocess Management
+###
+Qns: Which method do you use to prepare a new environment to modify environment variables?
+
+Ans: copy
+
+###
+
+###
+Qns:
+
+Ans:
+
+###
 
 ###
 Qns:
