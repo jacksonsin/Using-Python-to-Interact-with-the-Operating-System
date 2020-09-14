@@ -25,3 +25,33 @@ Which statements are true about  input and raw_input in Python 2? (select all th
 Ans:
 input performs basic math operations
 raw_input gets a string from the user
+
+
+<Practice Quiz: Python Subprocesses>
+Question 1
+What type of object does a run function return?
+
+Ans: Completed Process
+
+Question 2
+How can you change the current working directory where a command will be executed?
+
+Ans: Use the cwd parameter.
+
+Question 3
+When a child process is run using the subprocess module, which of the following are true? (check all that apply)
+
+Ans:
+-The child process is run in a secondary environment
+-The parent process is blocked while the child process finishes.
+-Control is returned to the parent process when the child process ends.
+
+Question 4
+When using the run command of the subprocess module, what parameter, when set to True, allows us to store the output of a system command?
+
+Ans: capture_output
+
+Question 5
+What does the copy method of os.environ do?
+
+Ans: Creates a new dictionary of environment variables
