@@ -20,11 +20,11 @@ Qns: Which directory is NOT listed in the PATH variable by default?
 Ans: /usr/sbin/temp
 
 ###
-
+Command-Line Arguments and Exit Status
 ###
-Qns:
+Qns: Where are the command line arguments stored?
 
-Ans:
+Ans: sys
 
 ###
 
