@@ -1,0 +1,27 @@
+<Week 3 Practice Quiz>
+Question 1
+Which command will print out the exit value of a script that just ran successfully?
+
+Ans: echo $?
+
+Question 2
+Which command will create a new environment variable?
+
+Ans: export
+
+Question 3
+Which I/O stream are we using when we use the input function to accept user input in a Python script?
+
+Ans: STDIN
+
+Question 4
+What is the meaning of an exit code of 0?
+
+Ans: The program ended succesfully
+
+Question 5
+Which statements are true about  input and raw_input in Python 2? (select all that apply)
+
+Ans:
+input performs basic math operations
+raw_input gets a string from the user
