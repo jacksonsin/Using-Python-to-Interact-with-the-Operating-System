@@ -62,22 +62,22 @@ Qns: Which of the following is NOT an advantage of test-driven development (TDD)
 Ans: Faster development of code
 
 ###
+The Try-Except Construct
+###
+Qns: When a try block is not able to execute a function, which of the following return examples will an exception block most likely NOT return?
+
+Ans: Error
 
 ###
-Qns:
+Raising Errors
+###
+Qns: What keyword can help provide a reason an error has occurred in a function?
 
-Ans:
+Ans: assert
 
 ###
-
+Testing for Expected Errors
 ###
-Qns:
+Qns: When using the assertRaises method, what is passed first?
 
-Ans:
-
-###
-
-###
-Qns:
-
-Ans:
+Ans: Error
