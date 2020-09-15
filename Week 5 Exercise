@@ -1,0 +1,83 @@
+###
+What is testing?
+###
+Qns: When you test software, what are you really looking for?
+
+Ans: Defects
+
+###
+Manual Testing and Automated Testing
+###
+Qns: The advantage of running automated tests is that they will always get the same expected ___ if the software code is good.
+
+Ans: Results
+
+###
+Unit Tests
+###
+Qns: An important characteristic of a unit test is ___. 
+
+Ans: Isolation.
+
+###
+Writing Unit Tests in Python
+###
+Qns: What module can you load to use a bunch of testing methods for your unit tests?
+
+Ans: unittest
+
+###
+Edge Cases
+###
+Qns: Which of the following would NOT be considered as an edge case when testing a software's input for a user's first and last name?
+
+Ans: Jeffrey
+
+###
+Additional Test Cases
+###
+Qns: Which of the following is NOT an advantage of running an automatic unit test in a suite for a single function?
+
+Ans: Creating multiple test scripts
+
+###
+Black Box vs. White Box
+###
+Qns: Which of the following is descriptive of a black-box test case?
+
+Ans: Code is opaque.
+
+###
+Other Test Types
+###
+Qns: Running a piece of software code as-is to see if it runs describes what type of testing?
+
+Ans: Smoke test
+
+###
+Test-Driven Development
+###
+Qns: Which of the following is NOT an advantage of test-driven development (TDD)?
+
+Ans: Faster development of code
+
+###
+
+###
+Qns:
+
+Ans:
+
+###
+
+###
+Qns:
+
+Ans:
+
+###
+
+###
+Qns:
+
+Ans:
