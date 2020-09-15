@@ -1,0 +1,25 @@
+<Practice Quiz: Simple Tests>
+Question 1
+You can verify that software code behaves correctly using test ___.
+
+Ans: Cases
+
+Question 2
+What is the most basic way of testing a script?
+
+Ans: Different paremeters with expected results
+
+Question 3
+When a test is codified into its own software, what kind of test is it?
+
+Ans: Automatic test
+
+Question 4
+Using _____ simplifies the testing process, allowing us to verify the program's behavior repeatedly with many possible values.
+
+Ans: test cases
+
+Question 5
+The more complex our code becomes, the more value the use of _____ provides in managing errors.
+
+Ans: software testing
