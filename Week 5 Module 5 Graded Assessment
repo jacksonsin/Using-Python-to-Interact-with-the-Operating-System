@@ -1,0 +1,121 @@
+<View log file>
+
+1. view all logs
+cat ~/data/fishy.log
+
+<Find an error>
+1. Create a python script named find_error.py
+cd ~/scripts
+nano find_error.py
+
+2. Add the shebang line:
+#!/usr/bin/env python3
+
+3. Import the necessary Python modules:
+import sys
+import os
+import re
+
+4.  Define the error_search function and pass the log file to it as a parameter.
+def error_search(log_file):
+
+######
+
+#!/usr/bin/env python3
+
+import sys
+import os
+import re
+
+def error_search(log_file):
+  error = input("What is the error? ")
+  returned_errors = []
+
+  with open(log_file, mode='r',encoding='UTF-8') as file:
+    for log in  file.readlines():
+      error_patterns = ["error"]
+      for i in range(len(error.split(' '))):
+        error_patterns.append(r"{}".format(error.split(' ')[i].lower()))
+      if all(re.search(error_pattern, log.lower()) for error_pattern in error_p$
+        returned_errors.append(log)
+    file.close()
+  return returned_errors
+
+######
+<Create an output file>
+#!/usr/bin/env python3
+
+import sys
+import os
+import re
+
+def error_search(log_file):
+  error = input("What is the error? ")
+  returned_errors = []
+
+  with open(log_file, mode='r',encoding='UTF-8') as file:
+    for log in  file.readlines():
+      error_patterns = ["error"]
+      for i in range(len(error.split(' '))):
+        error_patterns.append(r"{}".format(error.split(' ')[i].lower()))
+      if all(re.search(error_pattern, log.lower()) for error_pattern in error_p$
+        returned_errors.append(log)
+    file.close()
+  return returned_errors
+  
+def file_output(returned_errors):
+  with open(os.path.expanduser('~') + '/data/errors_found.log', 'w') as file:
+    for error in returned_errors:
+      file.write(error)
+    file.close()
+
+######
+<Function call>
+#!/usr/bin/env python3
+import sys
+import os
+import re
+
+
+def error_search(log_file):
+  error = input("What is the error? ")
+  returned_errors = []
+  with open(log_file, mode='r',encoding='UTF-8') as file:
+    for log in  file.readlines():
+      error_patterns = ["error"]
+      for i in range(len(error.split(' '))):
+        error_patterns.append(r"{}".format(error.split(' ')[i].lower()))
+      if all(re.search(error_pattern, log.lower()) for error_pattern in error_patterns):
+        returned_errors.append(log)
+    file.close()
+  return returned_errors
+
+  
+def file_output(returned_errors):
+  with open(os.path.expanduser('~') + '/data/errors_found.log', 'w') as file:
+    for error in returned_errors:
+      file.write(error)
+    file.close()
+if __name__ == "__main__":
+  log_file = sys.argv[1]
+  returned_errors = error_search(log_file)
+  file_output(returned_errors)
+  sys.exit(0)
+  
+1. Save the file
+Ctrl-o, followed by the Enter key and Ctrl-x.
+
+2. Make the file executable before running it.
+sudo chmod +x find_error.py
+
+3. Now, run the file by passing the path to fishy.log as a parameter to the script.
+./find_error.py ~/data/fishy.log
+
+4. This script will now prompt for the type of error to be searched. Continue by entering the following type of error:
+CRON ERROR Failed to start
+
+5. You can view the ERROR log using the command below:
+cat ~/data/errors_found.log
+
+
+
