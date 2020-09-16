@@ -1,0 +1,217 @@
+<Prerequisites>
+
+1. Navigate to this directory 
+cd ~/data
+
+2. List the files
+ls
+
+3. To view the contents of the user_emails.csv file
+cat user_emails.csv
+
+4. Use the following command to navigate to the scripts directory
+cd ~/scripts
+
+5. list the contents within the scripts directory
+ls
+
+6. You can view the file
+cat emails.py
+
+7. Since you know the contents of the user_emails.csv file, choose any name to be passed as a parameter, or you can use the following name
+python3 emails.py Blossom Gill
+
+<Introduction to test cases>
+1. Use the following command to create a new file (in scripts directory) to write our test cases
+nano ~/scripts/emails_test.py
+
+######
+#!/usr/bin/env python3
+import unittest
+from emails import find_email
+
+class EmailsTest(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+if __name__ == '__main__':
+  unittest.main()
+
+######
+2. We will give the file permissions for execution.
+chmod +x emails_test.py
+
+3. let's run our first test case using the following command
+./emails_test.py
+
+<Test Case 1: Missing parameters>
+1. python3 emails.py Kirk
+
+2. Let's now write a test case to handle this type of error. This test case should pass just the first name to the script.
+nano emails_test.py
+
+######
+#!/usr/bin/env python3
+import unittest
+from emails import find_email
+
+class EmailsTest(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+
+  def test_one_name(self):
+    testcase = [None, "John"]
+    expected = "Missing parameters"
+    self.assertEqual(find_email(testcase), expected)
+
+if __name__ == '__main__':
+  unittest.main()
+
+######
+3. Save the file 
+Ctrl-o, Enter key, and Ctrl-x.
+
+4. Now run the second test using the following command
+./emails_test.py
+
+5. Let's move forward by adding a try/except clause to the script emails.py.
+nano emails.py
+
+######
+
+#!/usr/bin/env python3
+
+import sys
+import csv
+
+
+def populate_dictionary(filename):
+  """Populate a dictionary with name/email pairs for easy lookup."""
+  email_dict = {}
+  with open(filename) as csvfile:
+    lines = csv.reader(csvfile, delimiter = ',')
+    for row in lines:
+      name = str(row[0].lower())
+      email_dict[name] = row[1]
+  return email_dict
+
+def find_email(argv):
+  """ Return an email address based on the username given."""
+  # Create the username based on the command line input.
+  try:
+    fullname = str(argv[1] + " " + argv[2])
+    # Preprocess the data
+    email_dict = populate_dictionary('/home/student-00-3f17bd78b834/data/user_emails.csv')
+    # Find and print the email
+    return email_dict.get(fullname.lower())
+  except IndexError:
+    return "Missing parameters"
+
+def main():
+  print(find_email(sys.argv))
+
+if __name__ == "__main__":
+  main()
+
+######
+6. Save the file
+Ctrl-o, Enter key, and Ctrl-x.
+
+7. Now run the test cases within the file email_test.py again
+./emails_test.py
+
+<Test Case 2: Random email address>
+1. Open the file emails_test.py.
+nano emails_test.py
+
+2. Add the following test case after the previous test case
+
+######
+
+#!/usr/bin/env python3
+import unittest
+from emails import find_email
+
+class EmailsTest(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+
+  def test_one_name(self):
+    testcase = [None, "John"]
+    expected = "Missing parameters"
+    self.assertEqual(find_email(testcase), expected)
+
+  def test_two_name(self):
+    testcase = [None, "Roy","Cooper"]
+    expected = "No email address found"
+    self.assertEqual(find_email(testcase), expected)
+
+if __name__ == '__main__':
+  unittest.main()
+
+######
+1. Save the file
+Ctrl-o, Enter key, and Ctrl-x.
+
+2. Run the test script
+./emails_test.py
+
+3. To do this, edit the script file using:
+nano emails.py
+
+######
+
+#!/usr/bin/env python3
+
+import sys
+import csv
+
+
+def populate_dictionary(filename):
+  """Populate a dictionary with name/email pairs for easy lookup."""
+  email_dict = {}
+  with open(filename) as csvfile:
+    lines = csv.reader(csvfile, delimiter = ',')
+    for row in lines:
+      name = str(row[0].lower())
+      email_dict[name] = row[1]
+  return email_dict
+
+def find_email(argv):
+  """ Return an email address based on the username given."""
+  # Create the username based on the command line input.
+  try:
+    fullname = str(argv[1] + " " + argv[2])
+    # Preprocess the data
+    email_dict = populate_dictionary('/home/student-00-3f17bd78b834/data/user_emails.csv')
+    # Find and print the email
+    if email_dict.get(fullname.lower()):
+      return email_dict.get(fullname.lower())
+    else:
+      return "No email address found"
+  except IndexError:
+    return "Missing parameters"
+
+def main():
+  print(find_email(sys.argv))
+
+if __name__ == "__main__":
+  main()
+
+######
+4. Save the file
+Ctrl-o, Enter key, and Ctrl-x.
+
+5. Now, run the test case to check if the script still produces an error.
+python3 emails_test.py
+
+6. You can also run the script emails.py by passing some random names (that aren't present in user_emails.csv) and check the output.
+python3 emails.py Roy Cooper
+
+    
+
