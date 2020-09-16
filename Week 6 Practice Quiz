@@ -1,0 +1,26 @@
+<Practice Quiz: Interacting with the Command Line>
+Question 1
+Which of the following commands will redirect errors in a script to a file?
+
+Ans: user@ubuntu:~$ ./calculator.py 2> error_file.txt
+
+
+Question 2
+When running a kill command in a terminal, what type of signal is being sent to the process?
+
+Ans: SIGTERM
+
+Question 3
+What is required in order to read from standard input using Python?
+
+Ans: Stdin file object from sys module
+
+Question 4
+_____ are tokens delivered to running processes to indicate a desired action.
+
+Ans: Signals
+
+Question 5
+In Linux, what command is used to display the contents of a directory?
+
+Ans: ls
