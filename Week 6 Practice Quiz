@@ -24,3 +24,29 @@ Question 5
 In Linux, what command is used to display the contents of a directory?
 
 Ans: ls
+
+<Practice Quiz: Bash Scripting>
+Question 1
+Which of the following commands will output a list of all files in the current directory?
+
+Ans: echo *
+
+Question 2
+Which module can you load in a Python script to take advantage of star [*] like in BASH?
+
+Ans: Glob
+
+Question 3
+Conditional execution is based on the _____ of commands.
+
+Ans: exit status
+
+Question 4
+What command evaluates the conditions received on exit to verify that there is an exit status of 0 when the conditions are true, and 1 when they are false?
+
+Ans: test
+
+Question 5
+The opening square bracket ([), when combined with the closing square bracket (]), is an alias for which command?
+
+Ans: test
